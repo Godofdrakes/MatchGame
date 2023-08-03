@@ -1,2 +1,11 @@
-﻿using var game = new MatchGame.Game1();
-game.Run();
+﻿namespace MatchGame;
+
+internal static class Program
+{
+	public static void Main(string[] args)
+	{
+		using var game = new GameInstance();
+
+		game.Run();
+	}
+}
