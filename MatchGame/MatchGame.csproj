@@ -5,6 +5,7 @@
         <RollForward>Major</RollForward>
         <PublishReadyToRun>false</PublishReadyToRun>
         <TieredCompilation>false</TieredCompilation>
+        <TransformOnBuild>true</TransformOnBuild>
     </PropertyGroup>
     <PropertyGroup>
         <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -15,7 +16,7 @@
         <None Remove="Icon.bmp" />
         <None Update="ContentPathGenerator.tt">
           <Generator>TextTemplatingFileGenerator</Generator>
-          <LastGenOutput>ContentPathGenerator.generated.cs</LastGenOutput>
+          <LastGenOutput>ContentPathGenerator.Generated.cs</LastGenOutput>
         </None>
     </ItemGroup>
     <ItemGroup>
@@ -30,11 +31,14 @@
       <ProjectReference Include="..\ThirdParty\Nez\Nez.Portable\Nez.MG38.csproj" />
     </ItemGroup>
     <ItemGroup>
-      <Compile Update="ContentPathGenerator.generated.cs">
+      <Compile Update="ContentPathGenerator.Generated.cs">
         <AutoGen>True</AutoGen>
         <DesignTime>True</DesignTime>
         <DependentUpon>ContentPathGenerator.tt</DependentUpon>
       </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Content\" />
     </ItemGroup>
     <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
         <Message Text="Restoring dotnet tools" Importance="High" />
