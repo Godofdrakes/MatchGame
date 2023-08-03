@@ -6,12 +6,10 @@ namespace MatchGame;
 
 public class GameInstance : Nez.Core
 {
-	private GraphicsDeviceManager _graphics;
 	private SpriteBatch _spriteBatch;
 
 	public GameInstance()
 	{
-		_graphics = new GraphicsDeviceManager(this);
 		Content.RootDirectory = "Content";
 		IsMouseVisible = true;
 	}
