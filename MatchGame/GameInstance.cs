@@ -1,5 +1,4 @@
 ﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 namespace MatchGame;
@@ -7,6 +6,7 @@ namespace MatchGame;
 public class GameInstance : Nez.Core
 {
 	public GameInstance()
+		: base(windowTitle: nameof(MatchGame))
 	{
 		Content.RootDirectory = "Content";
 		IsMouseVisible = true;
