@@ -6,8 +6,6 @@ namespace MatchGame;
 
 public class GameInstance : Nez.Core
 {
-	private SpriteBatch _spriteBatch;
-
 	public GameInstance()
 	{
 		Content.RootDirectory = "Content";
@@ -16,15 +14,13 @@ public class GameInstance : Nez.Core
 
 	protected override void Initialize()
 	{
-		// TODO: Add your initialization logic here
-
 		base.Initialize();
+		
+		// TODO: Add your initialization logic here
 	}
 
 	protected override void LoadContent()
 	{
-		_spriteBatch = new SpriteBatch(GraphicsDevice);
-
 		// TODO: use this.Content to load your game content here
 	}
 
