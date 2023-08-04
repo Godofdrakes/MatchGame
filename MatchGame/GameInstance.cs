@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
 namespace MatchGame;
@@ -22,6 +23,8 @@ public class GameInstance : Nez.Core
 	protected override void LoadContent()
 	{
 		// TODO: use this.Content to load your game content here
+
+		Console.WriteLine(ContentReference.Content.Items.TestItem);
 	}
 
 	protected override void Update(GameTime gameTime)

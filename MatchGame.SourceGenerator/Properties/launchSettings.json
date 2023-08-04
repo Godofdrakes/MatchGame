@@ -1,0 +1,9 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "MatchGame.SourceGenerator": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "../MatchGame/MatchGame.csproj"
+    }
+  }
+}
