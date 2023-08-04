@@ -26,6 +26,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\MatchGame.SourceGenerator\MatchGame.SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+		<ProjectReference Include="..\ThirdParty\Nez\Nez.ImGui\Nez.MG38.ImGui.csproj" />
 		<ProjectReference Include="..\ThirdParty\Nez\Nez.Portable\Nez.MG38.csproj" />
 	</ItemGroup>
 	<ItemGroup>
